@@ -28,16 +28,6 @@ public class SubscriberBot extends AbilityBot {
         return creatorId;
     }
 
-    public Ability sayHelloWorld() {
-        return Ability.builder()
-                .name("hello")
-                .info("says hello world")
-                .locality(Locality.ALL)
-                .privacy(Privacy.PUBLIC)
-                .action(ctx -> silent.send("Hello, world!", ctx.chatId()))
-                .build();
-    }
-
     public AbilityExtension subscribeExtension() {
         return new SubscribeExtension(this,  config.getSubscriptionService());
     }
