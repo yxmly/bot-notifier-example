@@ -1,0 +1,6 @@
+/.idea/
+
+/target/
+/src/main/resources/bot.properties
+/bots_sample.iml
+/TestSubscriberEchoBot
